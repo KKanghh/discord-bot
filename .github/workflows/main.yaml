@@ -16,7 +16,7 @@ jobs:
       shell: bash
       run: |
        curl -X POST https://discord.com/api/webhooks/1113745307314958367/RrSby1al_BTdeupYcC3TQj1mnTjvyMTLFnudRIjeyN45CBIMefr_3Fn_gJOHg2wuX4XH \
-       -H 'Content-type: multipart/form-data' \
+       -H 'Content-type: application/json' \
        -d '{
           "content": "테스트"
         }'
