@@ -17,6 +17,7 @@ jobs:
       run: |
         pwd
         ls
+        git log --pretty=oneline -1
     
     - name: Send a message to Discord
       shell: bash
