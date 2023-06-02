@@ -2,7 +2,7 @@ name: 'Discord Alarm'
 
 on: 
   schedule:
-    - cron: '0-59 * * * *'
+    - cron: '0 * * * *'
   push:
 
 jobs:
@@ -12,6 +12,12 @@ jobs:
     runs-on: 'ubuntu-latest'
     
     steps:
+    - uses: actions/checkout@v3
+    
+    - name: pwd
+      shell: bash
+      run: pwd
+    
     - name: Send a message to Discord
       shell: bash
       run: |
