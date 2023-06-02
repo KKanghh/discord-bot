@@ -16,7 +16,9 @@ jobs:
     
     - name: pwd
       shell: bash
-      run: pwd
+      run: |
+        pwd
+        ls
     
     - name: Send a message to Discord
       shell: bash
