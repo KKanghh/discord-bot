@@ -1,7 +1,8 @@
 name: 'Discord Alarm'
 
-on: schedule:
-  - cron: '37 * * * *'
+on: 
+  schedule:
+    - cron: '37 * * * *'
 
 jobs:
   webhook:
