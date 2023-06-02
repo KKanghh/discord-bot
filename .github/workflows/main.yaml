@@ -2,14 +2,15 @@ name: 'Discord Alarm'
 
 on: 
   schedule:
-    - cron: '37 * * * *'
+    - cron: '40 * * * *'
 
 jobs:
   webhook:
     name: 'WEBHOOK'
 
     runs-on: 'ubuntu-latest'
-
+    
+    steps:
     - name: Send a message to Discord
       shell: bash
       run: |
